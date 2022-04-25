@@ -19,15 +19,70 @@ article img.emojione {
 }
 
 
-/* Docker Branding */
+/* Docker Branding 
 .md-header {
     background-color: #0d9cec !important;
 }
+*/
 
 @font-face{
     font-family: "Geomanist";
     src: url("../fonts/hinted-Geomanist-Book.ttf")
 }
+
+@font-face{ 
+	font-family: 'SINUHE';
+	src: url('../fonts/SINUHE.eot'); 
+	src: url('../fonts/SINUHE.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SINUHE.woff') format('woff'),
+		url('../fonts/SINUHE.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+e {
+	font-family: 'SINUHE';
+	font-size: 40pt;
+	color: orange;
+    text-shadow: 1px 1px 2px black, 0 0 1px #fb8c00;
+    vertical-align: middle;
+}
+
+[table]
+{
+	background: #202020;
+	border-radius: 10px;
+	padding: 0 10px;
+}
+
+header,
+.md-footer-social
+{
+    display: none;
+}
+
+h2
+{
+    border-bottom: 3px solid rgba(255, 165, 0, 0.2);
+}
+
+.md-nav__title
+{
+    background: orange;
+width: fit-content;
+border-radius: 5px;
+color: white;
+padding: 5px 14px;
+font-weight: bolder;
+letter-spacing: 3px;
+
+}
+
+.md-typeset blockquote {
+    padding-left: .6rem;
+    border-left: 0.4rem solid rgba(255, 165, 0, 0.23);
+    color: rgba(0,0,0,.54);
+    }
 
 body {
     font-family: "Open Sans", sans-serif;
