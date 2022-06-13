@@ -19,70 +19,15 @@ article img.emojione {
 }
 
 
-/* Docker Branding 
+/* Docker Branding */
 .md-header {
     background-color: #0d9cec !important;
 }
-*/
 
 @font-face{
     font-family: "Geomanist";
     src: url("../fonts/hinted-Geomanist-Book.ttf")
 }
-
-@font-face{ 
-	font-family: 'SINUHE';
-	src: url('../fonts/SINUHE.eot'); 
-	src: url('../fonts/SINUHE.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/SINUHE.woff') format('woff'),
-		url('../fonts/SINUHE.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-e {
-	font-family: 'SINUHE';
-	font-size: 40pt;
-	color: orange;
-    text-shadow: 1px 1px 2px black, 0 0 1px #fb8c00;
-    vertical-align: middle;
-}
-
-[table]
-{
-	background: #202020;
-	border-radius: 10px;
-	padding: 0 10px;
-}
-
-header,
-.md-footer-social
-{
-    display: none;
-}
-
-h2
-{
-    border-bottom: 3px solid rgba(255, 165, 0, 0.2);
-}
-
-.md-nav__title
-{
-    background: orange;
-width: fit-content;
-border-radius: 5px;
-color: white;
-padding: 5px 14px;
-font-weight: bolder;
-letter-spacing: 3px;
-
-}
-
-.md-typeset blockquote {
-    padding-left: .6rem;
-    border-left: 0.4rem solid rgba(255, 165, 0, 0.23);
-    color: rgba(0,0,0,.54);
-    }
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -106,3 +51,179 @@ h1, h2, h3, h4, .md-footer-nav__inner, .md-header-nav__title, footer.md-footer {
 .md-header-nav__button img {
     width: 145px;
 }
+
+
+
+@font-face{ 
+    font-family: 'SINUHE';
+    src: url('../fonts/SINUHE.eot'); 
+    src: url('../fonts/SINUHE.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SINUHE.woff') format('woff'),
+        url('../fonts/SINUHE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+e {
+    font-family: 'SINUHE';
+    font-size: 40pt;
+    color: orange;
+text-shadow: 1px 1px 2px black, 0 0 1px #fb8c00;
+vertical-align: middle;
+}
+
+
+
+td, th {
+font-weight: 400;
+vertical-align: middle !important;
+text-align: center;
+min-width: 10rem;
+}
+
+.md-typeset table:not([class]) {
+background-color: var(--md-default-bg-color);
+border: .05rem solid var(--md-typeset-table-color);
+border-radius: 5px;
+display: inline-block;
+font-size: .64rem;
+max-width: 100%;
+overflow: auto;
+touch-action: auto;
+}
+
+
+
+/*
+body > header > nav,
+header
+{
+    display: none !important;
+}
+
+header{
+    background-color: white !important;
+    height: 20px !important;
+}
+*/
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > label,
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--secondary > div > div > nav > label
+{
+    background: orange;
+width: fit-content;
+border-radius: 5px;
+color: white;
+padding: 4px 17px;
+letter-spacing: 5px;
+height: 30px;
+text-align: center;
+}
+
+h1
+{
+    display: none;
+}
+
+
+h3 {
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    line-height: 1.5;
+    margin: 1.6em 0 .8em;
+    background: rgba(83, 83, 83, 0.09);
+    border-radius: 5px;
+    padding-left: 10px;
+    /* color: white; */
+    }
+
+
+h2
+{
+    position: sticky;
+    top:48px;
+    background: white;
+    z-index: 1;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: 0;
+
+    border-bottom: 3px solid rgba(255, 165, 0, 0.2);
+
+    display: none;
+}
+
+.md-typeset .tabbed-labels>label {
+    border-bottom: .1rem solid transparent;
+    border-radius: .1rem .1rem 0 0;
+    color: var(--md-default-fg-color--light);
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: .64rem;
+    font-weight: 700;
+    padding: 0.1em 0.5em .625em;
+    scroll-snap-align: start;
+    transition: background-color .25s,color .25s;
+    white-space: nowrap;
+    width: auto;
+    }
+
+img[alt="logo"]
+{
+    width: 207px !important;
+    height: 30px !important;
+}
+
+body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > label
+{
+    display: none;
+}
+
+
+.md-header {
+    background-color: white !important;
+    }
+
+
+    .md-header[data-md-state=shadow] {
+        box-shadow: 0 0 0 rgba(0,0,0);
+        transition: transform .25s cubic-bezier(.1,.7,.1,1),box-shadow .25s;
+        }
+
+
+/* этот стиль влияет на мобильную версию - отступ слева */
+/*         .md-sidebar {
+            align-self: flex-start;
+            flex-shrink: 0;
+            padding: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 2.4rem;
+            width: 12.1rem;
+            }  */   
+
+            .md-main__inner {
+                display: flex;
+                height: 100%;
+                margin-top: 0;
+                }
+
+                body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav
+                {
+                    padding-left: 10px;
+                }
+                .md-nav__link>* {
+                    cursor: pointer;
+                    display: flex;
+                    font-weight: bold;
+                    }
+
+
+                    @media screen and (min-width: 60em)
+                    {
+                    .md-search__form {
+                    background-color: rgba(0,0,0,.26);
+                    border-radius: 0.3rem;
+                    height: 1.5rem;
+                    }
+                }
